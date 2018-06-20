@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-var port = 8888;
+var port = 7777;
 app.get('/', function(req, res){
     res.json({message: "Welcome!"});
 });
