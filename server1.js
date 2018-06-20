@@ -2,11 +2,11 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
+var port = process.argv.slice(2);
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-var port = 7777;
 app.get('/', function(req, res){
     res.json({message: "Welcome!"});
 });
